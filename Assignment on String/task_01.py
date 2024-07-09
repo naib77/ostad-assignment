@@ -26,11 +26,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-    """
-    This is a multi-line string that spans
-    multiple lines and can be used as a 
-    multi-line comment.
-    """
 """
 1. Time Complexity: O(n), where n is the length of the string. This is because we are iterating through the string and
                      placing each character in its correct position. Space Complexity: O(n), where n is the length of the string. This

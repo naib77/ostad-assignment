@@ -20,9 +20,12 @@ def main():
     print(index)
 
 
-'''
-haystack = "sadbutsad", needle = "sad"
-'''
-
 if __name__ == "__main__":
     main()
+
+
+'''
+01. Time Complexity: O(n * m), where n is the length of the haystack and m is the length of the needle. This is because, 
+    in the worst case, we need to check each position in the haystack.
+02. Space Complexity: O(1) as we are not using any additional data structures that grow with the input size.
+'''
