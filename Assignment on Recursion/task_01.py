@@ -1,27 +1,36 @@
 import sys
 
 
-def is_palindrome_recursive(s, start, end):
-    # Base case: If the string is empty or has one character, it is a palindrome
+def is_palindrome(input, start, end):
     if start >= end:
         return True
-
-    # Recursive case: If the first and last characters match, check the substring
-    if s[start] == s[end]:
-        return is_palindrome_recursive(s, start + 1, end - 1)
+    if input[start] == input[end]:
+        return is_palindrome(input, start + 1, end - 1)
     else:
         return False
 
 
-def is_palindrome(s):
-    return is_palindrome_recursive(s, 0, len(s) - 1)
-
-
 def main():
-    input = sys.stdin.read().strip()  # Read input from the console and strip any whitespace
-    result = is_palindrome(input)  # Check if the input string is a palindrome
+    input = sys.stdin.read().strip()[5:-1]  # Read input from the console and strip any whitespace
+    result = is_palindrome(input, 0, len(input) - 1)  # Check if the input string is a palindrome
     print(result)  # Print the result
 
 
 if __name__ == "__main__":
     main()
+
+'''
+
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+    
+    
+    
+    Example 1:
+        Input: s = "madam"
+        s1 = m, e5 = m
+        s2 = a, e4 = a
+        s3 = d, e3 = d
+
+        Output: true
+'''
