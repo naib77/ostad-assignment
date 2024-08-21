@@ -15,29 +15,27 @@ def reverse_linked_list(head: ListNode) -> ListNode:
         current = next_node
 
         # 1st loop
-            # current = 1
-            # next_node = 2
-            # prev = None
-            # current.next = None
-            # prev = 1
-            # current = 2
+        # current = 1
+        # next_node = 2
+        # prev = None
+        # current.next = None
+        # prev = 1
+        # current = 2
         # 2nd loop
-            # current = 2
-            # next_node = 3
-            # prev = 1
-            # current.next = 1
-            # prev = 2
-            # current = 3
+        # current = 2
+        # next_node = 3
+        # prev = 1
+        # current.next = 1
+        # prev = 2
+        # current = 3
         # 3rd loop
-            # current = 3
-            # next_node = 4
-            # prev = 2
-            # current.next = 2
-            # prev = 3
-            # current = 4
+        # current = 3
+        # next_node = 4
+        # prev = 2
+        # current.next = 2
+        # prev = 3
+        # current = 4
         # 4th loop
-
-
 
         # Input: head = [1, 2, 3, 4, 5]
         # Output: [5, 4, 3, 2, 1]
@@ -90,3 +88,6 @@ if __name__ == "__main__":
     output_list = linked_list_to_list(reversed_head)
 
     print(output_list)
+
+# Time Complexity: O(n) - The reversal still requires a single pass through the linked list.
+# Space Complexity: O(1) - The reversal is performed in place.
